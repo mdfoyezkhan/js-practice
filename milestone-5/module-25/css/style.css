@@ -9,3 +9,11 @@ p{
     font-size: 30px;
     
 }
+ul{
+    width: 300px;
+    margin: auto;
+}
+li{
+    font-size: 25px;
+    text-transform: uppercase;
+}
