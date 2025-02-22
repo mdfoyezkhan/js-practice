@@ -18,4 +18,4 @@ for(const foyej of foyejs ){
     console.log(foyej.innerText)
 };
 const foyej =document.getElementById('foyej');
-console.log(foyej)
+console.log(foyej.innerText)
