@@ -15,7 +15,13 @@ for(const h1 of heading){
 const foyejs =document.getElementsByClassName('foyej');
 // console.log(foyejs.innerText);
 for(const foyej of foyejs ){
-    console.log(foyej.innerText)
+    // console.log(foyej.innerText)
 };
 const foyej =document.getElementById('foyej');
-console.log(foyej.innerText)
+// console.log(foyej.innerText)
+
+const htmlCl = document.querySelectorAll('.html-collection')
+// console.log(htmlCl);
+for(const thml of htmlCl){
+    console.log(thml)
+}
