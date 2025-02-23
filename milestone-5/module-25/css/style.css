@@ -17,3 +17,10 @@ li{
     font-size: 25px;
     text-transform: uppercase;
 }
+.beg{
+    text-align:center;
+    font-family: arial;
+}
+.large{
+    color:blue;
+}

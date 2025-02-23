@@ -27,6 +27,6 @@ for(const thml of htmlCl){
     // console.log(thml.innerText)
 }
 const title=document.getElementById('homes');
-console.log(title.style.color='red')
+// console.log(title.style.color='red')
 
 
