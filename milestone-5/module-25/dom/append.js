@@ -18,3 +18,16 @@ unorderList.appendChild(li1);
 inMain.appendChild(unorderList)
 main.appendChild(inMain);
 
+const mainBox = document.getElementById('main');
+const forListSection = document.createElement('section');
+forListSection.innerHTML =`
+<h1>this is secend section</h1>
+<ul>
+<li>foyej khan</li>
+<li>salman khan</li>
+<li>emon khan</li>
+<li>sanam khan</li>
+</ul>
+`
+mainBox.appendChild(forListSection);
+
