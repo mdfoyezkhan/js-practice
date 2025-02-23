@@ -20,8 +20,13 @@ for(const foyej of foyejs ){
 const foyej =document.getElementById('foyej');
 // console.log(foyej.innerText)
 
-const htmlCl = document.querySelectorAll('.html-collection')
+const htmlCl = document.querySelectorAll('.html-collection li')
 // console.log(htmlCl);
+// console.log(htmlCl.innerText)
 for(const thml of htmlCl){
-    console.log(thml)
+    // console.log(thml.innerText)
 }
+const title=document.getElementById('homes');
+console.log(title.style.color='red')
+
+
