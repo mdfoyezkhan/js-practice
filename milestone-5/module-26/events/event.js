@@ -1,4 +1,10 @@
-console.log('how are you all');
 const clickMe =document.getElementById('click');
-clickMe.onclick('how are you all');
-console.log(clickMe)
+clickMe.onclick= makeRed
+function makeRed(){
+    document.body.style.backgroundColor ='red';
+}
+// makeRed()
+const mrb = document.getElementById('mrb');
+mrb.onclick = function foyej(){
+    document.body.style.backgroundColor = 'green';
+}
