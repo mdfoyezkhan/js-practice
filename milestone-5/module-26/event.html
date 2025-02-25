@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="onclickss()">Final DOM event handlers</h1>
+    <h3 id="handler">default text</h3>
+    <button id="handles" onclick="onclicks()">Handle event by add onclick function</button>
+    <button id="addEventListeners">handle event by addEventListener</button>
+    <br>
+    <br>
+    <p id="default">default input text</p>
+    <input id="input-text" type="text">
+    <button id="input-button">update</button>
+    <script>
+        // options 1
+        function onclickss(){
+            console.log('button onclick');
+            document.body.style.backgroundColor ='green'
+        }
+        // options 2
+        function onclicks(){
+            const handlers = document.getElementById('handler');
+            handler.innerText = 'handled by function attached on onclick attribute';
+        }
+        // options 3
+        document.getElementById('addEventListeners').addEventListener('click', function(){
+            const addeventlist = document.getElementById('handler');
+            addeventlist.innerText = 'text update by add event listener button';
+            document.body.style.backgroundColor = 'pink';
+        })
+        // options 4
+        document.getElementById('input-button').addEventListener('click', function(){
+            const inputField = document.getElementById('input-text');
+            const inputText = inputField.value;
+            const changeText = document.getElementById('default');
+            changeText.innerText = inputText;
+            inputField.value = '';
+        })       
+    </script>
+</body>
+</html>
