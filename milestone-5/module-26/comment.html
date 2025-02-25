@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>please add your comment</h1>
+    <div id="para">
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ea iure fugit, consectetur in molestiae nobis corrupti, sequi optio tempore eveniet? Debitis, dolor consectetur. Sequi error numquam placeat dignissimos quasi, alias facere, temporibus libero officia fugiat ex quae adipisci. Eum architecto, consectetur ducimus suscipit aliquam similique eveniet sit fuga autem.</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ea iure fugit, consectetur in molestiae nobis corrupti, sequi optio tempore eveniet? Debitis, dolor consectetur. Sequi error numquam placeat dignissimos quasi, alias facere, temporibus libero officia fugiat ex quae adipisci. Eum architecto, consectetur ducimus suscipit aliquam similique eveniet sit fuga autem.</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ea iure fugit, consectetur in molestiae nobis corrupti, sequi optio tempore eveniet? Debitis, dolor consectetur. Sequi error numquam placeat dignissimos quasi, alias facere, temporibus libero officia fugiat ex quae adipisci. Eum architecto, consectetur ducimus suscipit aliquam similique eveniet sit fuga autem.</p>
+    </div>
+    
+     <div>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <br>
+        <button id="post">post</button>
+     </div>
+     <script>
+
+        document.getElementById('post').addEventListener('click',function(){
+            const textArea = document.getElementById('textarea');
+            const changeText = textArea.value;
+            const para = document.getElementById('para');
+            const p = document.createElement('p');
+            p.innerText = changeText;
+            para.appendChild(p);
+            // para.innerText = changeText;
+            textArea.value = '';
+        })
+     </script>
+</body>
+</html>
