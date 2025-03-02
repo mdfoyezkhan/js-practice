@@ -23,7 +23,7 @@ document.getElementById('button-id').addEventListener('click', function(event){
     // console.log(pinNumber)
     if(phoneNumber === '11' && pinNumber === '1234'){
         console.log('you are login');
-        window.location.href ='https://v3.tailwindcss.com/docs/min-height';
+        window.location.href ='js/home.html';
     }
     else{
         alert('somthing wont wrong')
