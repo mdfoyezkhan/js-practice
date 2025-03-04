@@ -12,6 +12,6 @@ document.getElementById('cashout').addEventListener('click', function(event){
         document.getElementById('balance').innerText = totalBalance;
     }
     else{
-        alert('something wont wron')
+        alert('something wont wrong? try again')
     }
 })
