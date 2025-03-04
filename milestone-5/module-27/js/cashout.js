@@ -8,8 +8,8 @@ document.getElementById('cashout').addEventListener('click', function(event){
         const balance = document.getElementById('balance').innerText;
         console.log('hello',balance)
         const newBalance = parseFloat(balance);
-        const totalBalance = newBalance + inputfloat;
-        document.getElementById('balance').innerText = totalBalance;
+        const totalBalances = newBalance + inputfloat;
+        document.getElementById('balance').innerText = totalBalances;
     }
     else{
         alert('something wont wrong? try again')
