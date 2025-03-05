@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>home pages</title>
+    <!-- daisy ui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla hic tempora corrupti blanditiis ullam nobis a voluptate earum, eum illo!</p>
+<body class="ml-96">
+   <main>
+    <div class="mockup-phone">
+        <div class="camera"></div> 
+        <div class="display">
+          <div class="artboard artboard-demo phone-1">
+            <!-- balance box start here -->
+             <div class="stats shadow">
+                <div class="stat">
+                    <div id="balance" class="stat-value">9400</div>
+                    <div class="stat-desc text-sm">Available Balance</div>
+                </div>
+            </div>
+            <!-- balance box end here -->
+            <div class="divider"></div> 
+            <!-- add money and Cashout bar start here -->
+             <div>
+                <button id="addMoney" class="btn ">Add Money</button>
+                <button id="cashout" class="btn ">Cashout</button>
+            </div>
+            <!-- add money and Cashout bar end here -->
+            <div class="divider"></div> 
+            <!-- this form for add money  -->
+            <div id="add-money" class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <div class="card  shadow-2xl bg-base-100">
+                    <div class="px-10 py-5">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="Amount-input" type="text" placeholder="Amount" class="input input-bordered" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Enter Your Pin</span>
+                        </label>
+                        <input id="pin-input" type="password" placeholder="password" class="input input-bordered" autocomplete="off"/>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- this form for add money end here -->
+
+            <!-- this form for cashout here -->
+            <div id="cashout-form" class="hidden">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card  shadow-2xl bg-base-100">
+                  <div class="px-10 py-5">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="Amount-input-cashout" type="text" placeholder="Amount" class="input input-bordered" />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Enter Your Pin</span>
+                      </label>
+                      <input id="pin-input-cashout" type="password" placeholder="password" class="input input-bordered" autocomplete="off"/>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="cashout-btn" class="btn btn-primary">Cashout</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+   </main>
+   <script src="js/home.js"></script>
+   <script src="js/cashout.js"></script>
+   <script src="js/features.js"></script>
+   
 </body>
 </html>
