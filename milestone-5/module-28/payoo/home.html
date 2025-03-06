@@ -17,19 +17,46 @@
                 <!-- balance box start here  -->
                 <div class="stats shadow">
                     <div class="stat">
-                      <div id="balance" class="stat-title">Available Balance</div>
-                      <div class="stat-value">9400</div>
+                      <div class="stat-title">Available Balance</div>
+                      <div id="balance" class="stat-value">9400</div>
                     </div>
                   </div>
                 <!-- balance box end here  -->
                  <div class="divider"></div>
+                 <!-- features start here  -->
+                  <div>
+                    <button id="add-money" class="btn btn-lg">Add Money</button>
+                    <button id="cash-out" class="btn btn-lg">Cash Out</button>
+                  </div>
+                  <!-- features end here -->
+                   <div class="divider"></div>
+                   <!-- add money form start here  -->
+                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Enter Your Amount</span>
+                        </label>
+                        <input id="Amount-input" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Enter Your Pin</span>
+                        </label>
+                        <input id="pin-number-input" type="password" placeholder="Pin" class="input input-bordered" required autocomplete="off"/>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                   <!-- add money form end here  -->
 
-
-                 
               </div>
             </div>
           </div>
     </main>
+    <script src="utilites.js"></script>
     <script src="addmoney.js"></script>
 </body>
 </html>
