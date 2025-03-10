@@ -8,8 +8,8 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
     if(inputValue === 1234){
         const balance = getTextFieldValueById('balance');
        const totalBalance = balance + inputAddNumber;
-       const innerTextNumber = getTextFieldValueById('balance').innerText = totalBalance;
-       console.log(innerTextNumber)
+       document.getElementById('balance').innerText = totalBalance;
+      
 
     }
     else{
