@@ -9,8 +9,10 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
         const balance = getTextFieldValueById('balance');
        const totalBalance = balance + inputAddNumber;
        document.getElementById('balance').innerText = totalBalance;
-      
-
+    //   add to transaction history
+    const p = document.createElement('p')
+     p.innerText = `Added: ${inputAddNumber} Tk. New Balance:${totalBalance}`;
+     document.getElementById('transection-history').appendChild(p);
     }
     else{
         alert('something wont rong')
