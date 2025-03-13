@@ -3,6 +3,10 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
     // const addMoney = getInputFieldValueById();
     // console.log('add money value', addMoney);
     const inputAddNumber = getInputFieldValueById('Amount-input');
+    if(isNaN(inputAddNumber)){
+        alert('something wont wrong');
+        return;
+    }
     const inputValue = getInputFieldValueById('pin-number-input')
     console.log(inputAddNumber, inputValue)
     if(inputValue === 1234){
