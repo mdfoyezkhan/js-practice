@@ -13,3 +13,7 @@ const p = `hi
 foyej khan
 how are you`;
 console.log(p)
+const number = [12, 23, 45, 55];
+const student = {name:'foyej khan', age: 5};
+const math = `the sum of ${number[3]} and ${student.age} is ${a + b}`;
+console.log(math)
