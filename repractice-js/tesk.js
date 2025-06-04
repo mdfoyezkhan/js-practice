@@ -21,3 +21,8 @@ var totalResult = Mathematics + Biology + Chemistry + Physics + bangla;
 totalResult /= 5;
 console.log(totalResult)
 
+// You task is to divide the given number by 5 and show the remainder as the output.
+var divideNumber = 5;
+var giveNumber = 119;
+var result = giveNumber % divideNumber;
+console.log(result)
