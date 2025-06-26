@@ -42,11 +42,34 @@
 //     console.log(x)
 // }
 
-let n = 10;
-while( n < 100){
-    n++;
-    if(Math.sqrt(n) % 2 === 0){
-        break;
+// let n = 10;
+// while( n < 100){
+//     n++;
+//     if(Math.sqrt(n) % 2 === 0){
+//         break;
+//     }
+//     console.log(n)
+// }
+
+// for(let a = 1; a <= 40; a++){
+//     if(a % 2 !== 0){
+//         continue;
+//     }
+//     console.log(a)
+// }
+
+// let number = 1;
+// while(number <= 40){
+//     number++;
+//     if(number % 2 !==0){
+//         continue;
+//     }
+//     console.log(number)
+// }
+
+for(let n = 55; n <= 85; n++){
+    if(n % 5 !== 0 && n % 5 !== 0){
+        continue;
     }
     console.log(n)
 }
