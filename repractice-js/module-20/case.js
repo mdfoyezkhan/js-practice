@@ -20,7 +20,7 @@
 //     console.log('try agein')
 // }
 const school = 'Brindabon Govt college';
-console.log(school);
+console.log(school.to);
 console.log(typeof school);
 console.log(school.length);
 const firstName = 'foyej';

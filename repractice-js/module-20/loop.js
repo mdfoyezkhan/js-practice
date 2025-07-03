@@ -20,3 +20,6 @@ for(const phone of keys){
 for(const mobile of keys){
     console.log(mobile, ':', phones[mobile])
 }
+
+const x = Object.create();
+console.log(x)
