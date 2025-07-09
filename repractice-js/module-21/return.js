@@ -6,8 +6,8 @@ doubel(10)
 const outPut = doubel(10);
 console.log(outPut)
 
-function difference(num1, num2){
-const diff = num1 - num2;
+function difference(num1, num3){
+const diff = num1 - num3;
 return diff;
 }
 const fotherAge = 55;
