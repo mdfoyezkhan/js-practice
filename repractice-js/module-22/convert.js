@@ -19,8 +19,8 @@ console.log(forResult)
 console.log('this function for mile to kilometre');
 
 function convertKilometre(mile){
-    const convertKilo = mile / 1.60934;
+    const convertKilo = mile * 1.60934;
     return convertKilo;
 }
-const kilometre = convertKilometre(2);
+const kilometre = convertKilometre(1);
 console.log(kilometre)
