@@ -16,5 +16,11 @@
 // }
 // const collection = document.getElementsByClassName("example");
 const getId = document.getElementById('Lorem1');
-console.log(getId)
+console.log(getId);
+let getClass = document.getElementsByClassName('ipsum');
+
+for(let i = 0; i < getClass.length; i++){
+    console.log(i.length)
+}
+
 
