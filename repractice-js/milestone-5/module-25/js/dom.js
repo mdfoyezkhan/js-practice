@@ -15,12 +15,22 @@
 //     console.log(foyez)
 // }
 // const collection = document.getElementsByClassName("example");
-const getId = document.getElementById('Lorem1');
-console.log(getId);
-let getClass = document.getElementsByClassName('ipsum');
+// const getId = document.getElementById('Lorem1');
+// console.log(getId);
+// let getClass = document.getElementsByClassName('ipsum');
 
-for(let i = 0; i < getClass.length; i++){
-    console.log(i.length)
+// for(let i = 0; i < getClass.length; i++){
+//     console.log(i.length)
+// }
+
+
+// const getQuery = document.querySelector('.ipsum').innerText;
+// console.log(getQuery)
+const allGetQuery = document.querySelectorAll('.ipsum');
+console.log(allGetQuery)
+for(const getQuery of allGetQuery){
+    console.log(getQuery.innerText)
 }
+
 
 
