@@ -31,6 +31,36 @@ console.log(allGetQuery)
 for(const getQuery of allGetQuery){
     console.log(getQuery.innerText)
 }
+const forStyle = document.getElementById('Lorem1');
+forStyle.style.background = '#333';
+forStyle.style.color = 'green';
+forStyle.innerText='hello world';
+forStyle.style.textTransform = 'uppercase';
+forStyle.style.fontFamily = 'arial';
+forStyle.style.padding = '50px';
+forStyle.style.width = '500px';
+forStyle.style.borderRadius = '20px';
+
+console.log(forStyle)
+
+const titels = document.getElementById('title');
+titels.getAttribute('class');
+titels.classList.add('norem');
+titels.classList.add('chorem');
+
+titels.classList.remove('morem')
+titels.classList.remove('lorem')
+titels.classList.remove('chorem')
+titels.innerHTML = '<h1>hello world</h1>'
+titels.style.background = 'green';
+titels.style.padding = '30px';
+titels.style.fontSize = '50px';
+titels.style.fontFamily = 'arial';
+titels.style.width = '600px';
+titels.style.borderRadius = '20px';
+titels.style.margin = 'auto';
+titels.style.listStyle = 'none'
+console.log(titels)
 
 
 

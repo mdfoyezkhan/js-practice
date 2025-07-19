@@ -9,4 +9,10 @@
     background: #969494;
     padding: 50px;
     height: 100vh;
+    
+}
+.for-flax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
