@@ -1,3 +1,5 @@
+const { forChild } = require("./childnode");
+
 const minBox = document.getElementById('minbox');
 minBox.classList.add('for-flax');
 minBox.classList.remove('for-flax')
@@ -11,4 +13,5 @@ for(let section of sections){
    section.style.padding = '20px';
    section.style.borderRadius = '20px';
    section.style.fontFamily = 'arial';
-}
+};
+const forCreatElement = forChild.document.creatElement();
