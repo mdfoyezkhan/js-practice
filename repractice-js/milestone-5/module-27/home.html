@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCB Mobile bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-indigo-950 h-lvh">
+    <main class="flex justify-center ">
+        <!-- phone body added here -->
+        <div class="mockup-phone border-primary">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display bg-neutral-400  ">
+                <!-- avaleble balance -->
+                <div class="mt-28 mb-10 flex justify-center">
+                    <div class="stat h-30 w-60 bg-gray-300  rounded-xl">
+                        <div id="show-balance" class="stat-value">89400</div>
+                        <div class="stat-desc">Avalable Balance</div>
+                    </div>
+                </div>
+                <!-- divider added -->
+                <div class="divider"></div>
+                <!-- add and cesh btn added -->
+                <button id="add-btn" class="btn btn-xl ml-8">Add Money</button>
+                <button id="cesh-btn" class="btn btn-xl">Cesh Out</button>
+                <div class="divider"></div>
+                <!-- frome added -->
+                <div class="card bg-base-100 w-80 shrink-0 shadow-2xl ml-7 mt-10">
+                    <div class="card-body ">
+                        <fieldset class="fieldset">
+                            <label class="label">Add Money</label>
+                            <input id="amount-input" type="text" class="input" placeholder="Amount" autocomplete="off"/>
+                            <label class="label">Enter Your Pin</label>
+                            <input id="pin-input" type="password" class="input" placeholder="Pin" autocomplete="off"/>
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="add-for-money" class="btn btn-neutral mt-4">Add Money</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
