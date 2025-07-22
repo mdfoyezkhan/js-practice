@@ -28,24 +28,38 @@
                 <button id="add-btn" class="btn btn-xl ml-8">Add Money</button>
                 <button id="cesh-btn" class="btn btn-xl">Cesh Out</button>
                 <div class="divider"></div>
-                <!-- frome added -->
-                <div class="card bg-base-100 w-80 shrink-0 shadow-2xl ml-7 mt-10">
+                <!-- add money forme start here-->
+                <div id="add-money-form" class=" hidden card bg-base-100 w-80 shrink-0 shadow-2xl ml-7 mt-10">
                     <div class="card-body ">
                         <fieldset class="fieldset">
                             <label class="label">Add Money</label>
-                            <input id="amount-input" type="text" class="input" placeholder="Amount" autocomplete="off"/>
+                            <input id="amount-input" type="text" class="input" placeholder="Amount"
+                                autocomplete="off" />
                             <label class="label">Enter Your Pin</label>
-                            <input id="pin-input" type="password" class="input" placeholder="Pin" autocomplete="off"/>
+                            <input id="pin-input" type="password" class="input" placeholder="Pin" autocomplete="off" />
                             <div><a class="link link-hover">Forgot password?</a></div>
                             <button id="add-for-money" class="btn btn-neutral mt-4">Add Money</button>
                         </fieldset>
                     </div>
                 </div>
-
-
+                <!-- add money forme end here -->
+                <!-- cesh out form start here -->
+                <div id="cesh-out-form" class="card bg-gray-400 w-80 shrink-0 shadow-2xl ml-7 mt-10">
+                    <div class="card-body ">
+                        <fieldset class="fieldset">
+                            <label class="label">Add Money</label>
+                            <input id="cesh-amount-input" type="text" class="input" placeholder="Amount"
+                                autocomplete="off" />
+                            <label class="label">Enter Your Pin</label>
+                            <input id="cesh-pin-input" type="password" class="input" placeholder="Pin" autocomplete="off" />
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="cesh-out-btn" class="btn btn-neutral mt-4">Cesh Out</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- Cesh out form end here -->
             </div>
         </div>
-
     </main>
     <script src="js/home.js"></script>
 </body>
