@@ -14,8 +14,11 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
         console.log(getAvalableBalance)
         const convertAvalableBalance =parseFloat(getAvalableBalance);
         const totalBalance =getAmountConvert + convertAvalableBalance;
-        const showTotal = document.getElementById('show-value').innerText = totalBalance;
-        return showTotal;
+        document.getElementById('show-value').innerText = totalBalance;
+        
+        const p = document.createElement('p');
+        p.innerText = `added ${convertAvalableBalance}tk Avalable Balance ${totalBalance}`;
+        document.getElementById('transaction-box').appendChild(p);
     }
     else{
         alert('please try agin')
@@ -33,8 +36,12 @@ document.getElementById('cash-out-btn').addEventListener('click',function(events
         const getShowBalance = getInnerText('show-value');
         const convertShowBalance = parseFloat(getShowBalance);
         const totalBalance = convertShowBalance - getCAConvert;
-        const getBalance = document.getElementById('show-value').innerText = totalBalance;
-        return getBalance;
+        document.getElementById('show-value').innerText = totalBalance;
+        const p = document.createElement('p');
+        p.innerText = `added ${convertShowBalance}tk Avalable Balance ${totalBalance}`;
+        document.getElementById('transaction-box').appendChild(p);
+        
+       
     }
 })
 // cash out function end here
@@ -45,11 +52,23 @@ document.getElementById('add-btn').addEventListener('click',function(){
     getAddMoneyForm.classList.remove('hidden');
     const cashOutForm = document.getElementById('cash-out-form');
     cashOutForm.classList.add('hidden')
+    const transaction = document.getElementById('transaction-box');
+    transaction.classList.add('hidden');
 })
 // click event added in cash out btn
 document.getElementById('cash-btn').addEventListener('click',function(){
     const cashOutForm = document.getElementById('cash-out-form');
     cashOutForm.classList.remove('hidden')
+    const getAddMoneyForm = document.getElementById('add-money-form');
+    getAddMoneyForm.classList.add('hidden');
+    const transaction = document.getElementById('transaction-box');
+    transaction.classList.add('hidden');
+})
+document.getElementById('transaction-btn').addEventListener('click',function(){
+    const transaction = document.getElementById('transaction-box');
+    transaction.classList.remove('hidden');
+    const cashOutForm = document.getElementById('cash-out-form');
+    cashOutForm.classList.add('hidden');
     const getAddMoneyForm = document.getElementById('add-money-form');
     getAddMoneyForm.classList.add('hidden');
 })
