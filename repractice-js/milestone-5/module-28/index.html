@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scb banking</title>
+    <!-- daisy ui link added here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <!-- phone body added here -->
+        <div class="mockup-phone border-primary bg-slate-500">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-center pt-24 ">
+                <!-- avalable balance added here -->
+                <div class="stats shadow bg-gray-300">
+                    <div class="stat">
+                        <div id="show-value" class="stat-value">9400</div>
+                        <div class="stat-desc text-sm">Avalable Balance</div>
+                    </div>
+                </div>
+                <!-- avalable balance end here -->
+                <!-- divider added here -->
+                <div class="divider"></div>
+                <!-- divider end here -->
+                <!-- add btn and cash btn added here -->
+                <button id="add-btn" class="btn btn-xl">Add Money</button>
+                <button id="cash-btn" class="btn btn-xl">Cash Out</button>
+                <!-- add btn and cash btn end here -->
+                 <div class="divider"></div>
+                <!-- add money form added here -->
+                <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label text-xl text-black font-medium">Add Money</label>
+                            <input id="amount-input" type="text" class="input" placeholder="Enter Amount" autocomplete="off" />
+                            <label class="label text-xl text-black font-medium">Pin</label>
+                            <input id="pin-input" type="password" class="input" placeholder="Enter Your Pin"  autocomplete="off"/>
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="add-money-btn" class="btn btn-neutral mt-4 text-xl text-white font-medium">Add Money</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <!--add money form end here -->
+                <!-- cash out form added here -->
+                 <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label text-xl text-black font-medium">Cash Out</label>
+                            <input id="cash-amount-input" type="text" class="input" placeholder="Enter Amount" autocomplete="off" />
+                            <label class="label text-xl text-black font-medium">Pin</label>
+                            <input id="cash-pin-input" type="password" class="input" placeholder="Enter Your Pin"  autocomplete="off"/>
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="cash-out-btn" class="btn btn-neutral mt-4 text-xl text-white font-medium">Cash Out</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- cash out form end here -->
+
+            </div>
+        </div>
+
+    </main>
+    <script src="js/utility.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
