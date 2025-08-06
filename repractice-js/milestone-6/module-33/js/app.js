@@ -11,6 +11,6 @@ function dataLoding(){
 function getData(data){
     for(let i = 0; i < data.length; i++){
         console.log(data[i])
-        document.getElementById('div').innerText = data[i];
+        document.getElementById('div').innerText = data[i].name;
     }
 }
