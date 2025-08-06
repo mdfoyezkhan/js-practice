@@ -19,3 +19,18 @@ const convertTexts = JSON.stringify(shop);
 console.log(convertTexts)
 const convertObject = JSON.parse(convertTexts)
 console.log(convertObject)
+
+
+
+const produts ={
+    shop:'khan gears',
+    items:'mobile acceseris',
+    produts:{
+        phone: ['phone cover', 'headphone', 'blouthot spiker']
+    }
+}
+console.log(produts)
+const produtsJson = JSON.stringify(produts);
+console.log(produtsJson)
+const produtsForFarse = JSON.parse(produtsJson);
+console.log(produtsForFarse)
