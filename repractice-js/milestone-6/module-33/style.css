@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(144, 141, 141);
+}
+
+.cssstyle{
+    background: green;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
